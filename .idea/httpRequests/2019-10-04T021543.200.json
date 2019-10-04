@@ -1,9 +1,0 @@
-{
-  "user": {
-    "username": "kael1",
-    "email": "kael@test.com",
-    "bio": "this is a long bio",
-    "avatar": "test",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA5NDU1YTQ3LTJkZTgtNGY5MS1iMjI0LTE0ZTVlZDg4ZjU5MCIsInVzZXJuYW1lIjoia2FlbDEiLCJlbWFpbCI6ImthZWxAdGVzdC5jb20iLCJpYXQiOjE1NzAyMTI5NDMsImV4cCI6MTU3MDI5OTM0M30.RSc1A29BO8i9dmeia8PGHKyo5nG3jqpV1NzFU7UrngI"
-  }
-}
