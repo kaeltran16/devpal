@@ -1,0 +1,9 @@
+{
+  "user": {
+    "username": "test",
+    "email": "kael@test.com",
+    "bio": "kael@test.com",
+    "avatar": "test",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoidGVzdCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5MzE4NS41MjUsImlhdCI6MTU3MDIwOTE4NX0.zV2S8NGJo3e4tbx67uW6GjXlMWnNlpyAVlMqHsgmO70"
+  }
+}

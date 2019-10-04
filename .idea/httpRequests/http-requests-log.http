@@ -1,0 +1,588 @@
+GET http://localhost:3050/api/user/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA5NDU1YTQ3LTJkZTgtNGY5MS1iMjI0LTE0ZTVlZDg4ZjU5MCIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5NTY0Mi44OCwiaWF0IjoxNTcwMjExNjQyfQ.hWoeUjjv92OTnhhrD1G2GfuUC9sKvocVPdJGiEJ9ijc
+
+{
+  "user": {
+    "username": "kael1",
+    "password": "123456789",
+    "bio": "this is a long bio",
+    "avatar": "test"
+  }
+}
+
+<> 2019-10-04T021543.200.json
+
+###
+
+PUT http://localhost:3050/api/user/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA5NDU1YTQ3LTJkZTgtNGY5MS1iMjI0LTE0ZTVlZDg4ZjU5MCIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5NTY0Mi44OCwiaWF0IjoxNTcwMjExNjQyfQ.hWoeUjjv92OTnhhrD1G2GfuUC9sKvocVPdJGiEJ9ijc
+
+{
+  "user": {
+    "username": "kael1",
+    "password": "123456789",
+    "bio": "this is a long bio",
+    "avatar": "test"
+  }
+}
+
+<> 2019-10-04T021536.200.json
+
+###
+
+GET http://localhost:3050/api/user/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA5NDU1YTQ3LTJkZTgtNGY5MS1iMjI0LTE0ZTVlZDg4ZjU5MCIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5NTY0Mi44OCwiaWF0IjoxNTcwMjExNjQyfQ.hWoeUjjv92OTnhhrD1G2GfuUC9sKvocVPdJGiEJ9ijc
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "12345678"
+  }
+}
+
+<> 2019-10-04T020945.200.json
+
+###
+
+GET http://localhost:3050/api/user/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA5NDU1YTQ3LTJkZTgtNGY5MS1iMjI0LTE0ZTVlZDg4ZjU5MCIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5NTY0Mi44OCwiaWF0IjoxNTcwMjExNjQyfQ.hWoeUjjv92OTnhhrD1G2GfuUC9sKvocVPdJGiEJ9ijc
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "12345678"
+  }
+}
+
+<> 2019-10-04T020917.502.html
+
+###
+
+GET http://localhost:3050/api/user/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA5NDU1YTQ3LTJkZTgtNGY5MS1iMjI0LTE0ZTVlZDg4ZjU5MCIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5NTY0Mi44OCwiaWF0IjoxNTcwMjExNjQyfQ.hWoeUjjv92OTnhhrD1G2GfuUC9sKvocVPdJGiEJ9ijc
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "12345678"
+  }
+}
+
+<> 2019-10-04T015447.200.json
+
+###
+
+GET http://localhost:3050/api/user/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "12345678"
+  }
+}
+
+<> 2019-10-04T015427.401.json
+
+###
+
+POST http://localhost:3050/api/user/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg3ZmE3ZDVkLTNjOGEtNGNhMy04ZWRmLTJjODkxYWY2NmIzNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5MzI2My43MDksImlhdCI6MTU3MDIwOTI2M30.lYLUHp3oqrn18fJgWcqZk1I4NUk3KaQQRTj2a4sch7E
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "12345678"
+  }
+}
+
+<> 2019-10-04T015402.201.json
+
+###
+
+POST http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg3ZmE3ZDVkLTNjOGEtNGNhMy04ZWRmLTJjODkxYWY2NmIzNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5MzI2My43MDksImlhdCI6MTU3MDIwOTI2M30.lYLUHp3oqrn18fJgWcqZk1I4NUk3KaQQRTj2a4sch7E
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "12345678"
+  }
+}
+
+<> 2019-10-04T015357.201.json
+
+###
+
+POST http://localhost:3050/api/user/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg3ZmE3ZDVkLTNjOGEtNGNhMy04ZWRmLTJjODkxYWY2NmIzNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5MzI2My43MDksImlhdCI6MTU3MDIwOTI2M30.lYLUHp3oqrn18fJgWcqZk1I4NUk3KaQQRTj2a4sch7E
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "12345678"
+  }
+}
+
+<> 2019-10-04T015351.404.json
+
+###
+
+POST http://localhost:3050/api/user/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg3ZmE3ZDVkLTNjOGEtNGNhMy04ZWRmLTJjODkxYWY2NmIzNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5MzI2My43MDksImlhdCI6MTU3MDIwOTI2M30.lYLUHp3oqrn18fJgWcqZk1I4NUk3KaQQRTj2a4sch7E
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "12345678"
+  }
+}
+
+<> 2019-10-04T014333.502.html
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg3ZmE3ZDVkLTNjOGEtNGNhMy04ZWRmLTJjODkxYWY2NmIzNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5MzI2My43MDksImlhdCI6MTU3MDIwOTI2M30.lYLUHp3oqrn18fJgWcqZk1I4NUk3KaQQRTj2a4sch7E
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "12345678"
+  }
+}
+
+<> 2019-10-04T011441.200.json
+
+###
+
+POST http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "12345678"
+  }
+}
+
+<> 2019-10-04T011423.201.json
+
+###
+
+POST http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "test",
+    "bio": "kael@test.com",
+    "password": "12345678",
+    "avatar": "test"
+  }
+}
+
+<> 2019-10-04T011409.400.json
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "test",
+    "bio": "kael@test.com",
+    "password": "12345678",
+    "avatar": "test"
+  }
+}
+
+<> 2019-10-04T011359.404.json
+
+###
+
+DELETE http://localhost:3050/api/user/kael@test.com
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "test",
+    "bio": "kael@test.com",
+    "password": "12345678",
+    "avatar": "test"
+  }
+}
+
+<> 2019-10-04T011347.200.json
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "test",
+    "bio": "kael@test.com",
+    "password": "12345678",
+    "avatar": "test"
+  }
+}
+
+<> 2019-10-04T011305.200.json
+
+###
+
+PUT http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "test",
+    "bio": "kael@test.com",
+    "password": "12345678",
+    "avatar": "test"
+  }
+}
+
+<> 2019-10-04T011301.200.json
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T011149.200.json
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T011059.404.json
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010926.404.json
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010922.404.json
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<<> 2019-10-04T010907.502.html
+
+<> 2019-10-04T010917.400.json
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010907.502.html
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010836.404.json
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRjZWIwYzM2LTA1ZjYtNGNiMy05ZTg5LWE1Y2M1ZWY2ZTNlNiIsInVzZXJuYW1lIjoia2FlbCIsImVtYWlsIjoia2FlbEB0ZXN0LmNvbSIsImV4cCI6MTU3NTM5Mjg2Ni4zMzEsImlhdCI6MTU3MDIwODg2Nn0.HtC5UJAhu2o-erHKRdnC_1rA9VHGyhAl8xwahapJ2tU
+{:
+  "user":
+
+<> 2019-10-04T010820.404.json
+
+###
+
+POST http://localhost:3050/api/user/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010746.201.json
+
+###
+
+POST http://localhost:3050/api/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010737.404.json
+
+###
+
+POST http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010633.400.json
+
+###
+
+POST http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010531.400.json
+
+###
+
+GET http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010523.404.json
+
+###
+
+POST http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010459.400.json
+
+###
+
+POST http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010326.500.json
+
+###
+
+POST http://localhost:3050/api/user
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "user": {
+    "username": "kael",
+    "email": "kael@test.com",
+    "password": "123456789"
+  }
+}
+
+<> 2019-10-04T010223.400.json
+
+###
+
