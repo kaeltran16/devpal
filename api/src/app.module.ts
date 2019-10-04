@@ -9,11 +9,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
   imports: [
-      PostModule,
-      UserModule,
-      ProfileModule,
-      TagModule,
-      TypeOrmModule.forRoot()
+    PostModule,
+    UserModule,
+    ProfileModule,
+    TagModule,
+    TypeOrmModule.forRoot(),
   ],
   controllers: [AppController],
   providers: [AppService],

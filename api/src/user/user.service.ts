@@ -5,18 +5,19 @@ import {
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as crypto from 'crypto';
-import * as jwt from 'jsonwebtoken';
 import { UserEntity } from './user.entity';
 import { DeleteResult, Repository } from 'typeorm';
 import { CreateUserDto, LoginUserDto, UpdateUserDto } from './dto';
-import { UserRO } from './user.interface';
+import { Token, UserRO } from './user.interface';
 import { validate } from 'class-validator';
+import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
 export class UserService {
   constructor(
     @InjectRepository(UserEntity)
     private readonly userRepository: Repository<UserEntity>,
+    private jwtService: JwtService,
   ) {}
 
   async findAll(): Promise<UserEntity[]> {
@@ -44,7 +45,6 @@ export class UserService {
 
     const user = await queryBuilder.getOne();
 
-    console.log(user);
     if (user) {
       throw new BadRequestException('email and username must be unique');
     }
@@ -64,13 +64,14 @@ export class UserService {
     return this.buildUserRO(savedUser);
   }
 
-  async update(id: string, dto: UpdateUserDto): Promise<UserEntity> {
+  async update(id: string, dto: UpdateUserDto): Promise<UserRO> {
     let toUpdate = await this.userRepository.findOne(id);
     delete toUpdate.password;
     delete toUpdate.likes;
 
     let updated = Object.assign(toUpdate, dto);
-    return await this.userRepository.save(updated);
+    await this.userRepository.save(updated);
+    return this.buildUserRO(updated);
   }
 
   async delete(email: string): Promise<DeleteResult> {
@@ -86,33 +87,21 @@ export class UserService {
   }
 
   async findByEmail(email: string): Promise<UserRO> {
-    console.log(email);
     const user = await this.userRepository.findOne({ email });
     if (!user) throw new NotFoundException('user not found');
 
     return this.buildUserRO(user);
   }
 
-  public generateJwt(user: UserEntity): string {
-    let today = new Date();
-    let exp = new Date(today);
-    exp.setDate(today.getDate() + 60);
-
-    return jwt.sign(
-      {
-        id: user.id,
-        username: user.username,
-        email: user.email,
-        exp: exp.getTime() / 1000,
-      },
-      'test',
-    );
-  }
-
   private buildUserRO(user: UserEntity): UserRO {
-    const { username, email, bio, avatar } = user;
+    const { id, username, email, bio, avatar } = user;
 
-    const token = this.generateJwt(user);
+    const payload: Omit<Token, 'exp'> = {
+      id,
+      username,
+      email,
+    };
+    const token = this.jwtService.sign(payload);
     return {
       user: {
         username,

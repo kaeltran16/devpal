@@ -1,26 +1,25 @@
-import {
-  MiddlewareConsumer,
-  Module,
-  NestModule,
-  RequestMethod,
-} from '@nestjs/common';
+import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
+import { JwtModule } from '@nestjs/jwt';
+import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserEntity } from './user.entity';
 import { UserService } from './user.service';
 import { UserController } from './user.controller';
-import { AuthMiddleware } from './auth.middleware';
+import { JwtStrategy } from './jwt.strategy';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([UserEntity])],
-  providers: [UserService],
+  imports: [
+    TypeOrmModule.forFeature([UserEntity]),
+    PassportModule.register({ defaultStrategy: 'jwt' }),
+    JwtModule.register({
+      secret: process.env.JWT_SECRET,
+      signOptions: { expiresIn: process.env.JWT_EXP },
+    }),
+  ],
+  providers: [UserService, JwtStrategy],
   controllers: [UserController],
   exports: [UserService],
 })
 export class UserModule implements NestModule {
-  public configure(consumer: MiddlewareConsumer): any {
-    consumer.apply(AuthMiddleware).forRoutes({
-      path: 'user',
-      method: RequestMethod.GET | RequestMethod.PUT,
-    });
-  }
+  public configure(consumer: MiddlewareConsumer): any {}
 }

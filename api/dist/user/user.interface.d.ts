@@ -1,8 +1,17 @@
 export interface User {
-    id: string;
-    name: string;
+    username: string;
     email: string;
-    password: string;
+    bio: string;
     avatar?: string;
-    date: Date;
+}
+export interface UserRO {
+    user: User & {
+        token: string;
+    };
+}
+export interface Token {
+    id: string;
+    username: string;
+    email: string;
+    exp: number;
 }
