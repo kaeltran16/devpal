@@ -12,6 +12,8 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile.dev
+    environment:
+      - JWT_SECRET=thisIsALongSecret
     volumes:
       - ./api:/app
       - /app/node_modules
