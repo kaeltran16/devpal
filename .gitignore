@@ -52,6 +52,6 @@ dist/
 
 
 .env
-
+postgres-data/
 
 
