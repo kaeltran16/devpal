@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   postgres:
@@ -7,6 +7,8 @@ services:
       - POSTGRES_PASSWORD=postgres_password
       - POSTGRES_USER=postgres
       - POSTGRES_DB=postgres
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
 
   api:
     build:
@@ -14,6 +16,7 @@ services:
       dockerfile: Dockerfile.dev
     environment:
       - JWT_SECRET=thisIsALongSecret
+      - JWT_EXP=24h
     volumes:
       - ./api:/app
       - /app/node_modules
@@ -33,3 +36,16 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - "3050:80"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    depends_on:
+      - postgres
+    ports:
+      - "5555:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: admin
+    restart: unless-stopped
+    logging:
+      driver: "none"
