@@ -7,6 +7,9 @@ import { UserService } from './user.service';
 import { UserController } from './user.controller';
 import { JwtStrategy } from './jwt.strategy';
 
+console.log(process.env.JWT_SECRET);
+console.log(process.env.JWT_EXP);
+
 @Module({
   imports: [
     TypeOrmModule.forFeature([UserEntity]),

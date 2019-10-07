@@ -39,7 +39,6 @@ export class UserController {
   }
 
   @Post()
-  @UseGuards(AuthGuard())
   async create(@Body('user') userData: CreateUserDto): Promise<UserRO> {
     return await this.userService.create(userData);
   }

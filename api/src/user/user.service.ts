@@ -58,10 +58,10 @@ export class UserService {
     const errors = await validate(newUser);
     if (errors.length > 0) {
       throw new BadRequestException('user input is not valid');
+    } else {
+      const savedUser = await this.userRepository.save(newUser);
+      return this.buildUserRO(savedUser);
     }
-
-    const savedUser = await this.userRepository.save(newUser);
-    return this.buildUserRO(savedUser);
   }
 
   async update(id: string, dto: UpdateUserDto): Promise<UserRO> {
