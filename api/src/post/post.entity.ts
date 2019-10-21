@@ -35,14 +35,14 @@ export class PostEntity {
     this.updated = new Date();
   }
 
-  @Column('simple-array')
+  @Column('simple-array', { default: [] })
   tags: string[];
 
   @ManyToOne(type => UserEntity, user => user.posts)
   @JoinColumn()
   user: UserEntity;
 
-  @OneToMany(type => CommentEntity, comment => comment.post, { eager: true })
+  @OneToMany(type => CommentEntity, comment => comment.post, { nullable: true })
   @JoinColumn()
   comment: CommentEntity[];
 
